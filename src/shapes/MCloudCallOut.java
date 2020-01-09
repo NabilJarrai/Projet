@@ -14,7 +14,6 @@ public class MCloudCallOut extends MPointsShape {
     public MCloudCallOut(MShapeProperties properties) {
         super(properties);
     }
-
     @Override
     public void shapeFill(Graphics2D g) {
         int xPoints[] = {
