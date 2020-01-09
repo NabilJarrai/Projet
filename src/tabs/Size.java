@@ -29,7 +29,7 @@ public class Size extends ToolBarItem {
     private MButton threePx;
     private MButton fivePx;
     private MButton eightPx;
-    private int lineSizes[] = {1, 3, 5, 8};
+    private int lineSizes[] = {1, 3, 5, 20};
     private MButton buttons[] = new MButton[lineSizes.length];
 
     private JPanel lineBoard;
