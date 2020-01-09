@@ -16,24 +16,15 @@ public class MCloudCallOut extends MPointsShape {
     }
     @Override
     public void shapeFill(Graphics2D g) {
-        int xPoints[] = {
-            start.x + (end.x - start.x) / 2,
-            end.x,
-            end.x,
-            start.x,
-            start.x};
-        int yPoints[] = {
-            start.y,
-            start.y + (end.y - start.y) * 1 / 3,
-            end.y,
-            end.y, start.y + (end.y - start.y) * 1 / 3};
-        g.fillPolygon(xPoints, yPoints, 5);
+        int xPoints[] = {start.x, start.x + (end.x - start.x) / 2, end.x, start.x + (end.x - start.x) / 2};
+        int yPoints[] = {start.y + (end.y - start.y) / 2, start.y, start.y + (end.y - start.y) / 2, end.y};
+        g.fillPolygon(xPoints, yPoints, 4);
     }
 
     @Override
     public void shapeOutline(Graphics2D g) {
-        int xPoints[] = { start.x + (end.x - start.x) / 2,    end.x,   end.x, start.x , start.x};
-        int yPoints[] = {start.y, start.y + (end.y - start.y) * 1 / 3, end.y, end.y, start.y + (end.y - start.y) * 1 / 3};
-        g.drawPolygon(xPoints, yPoints, 5);
+        int xPoints[] = {start.x, start.x + (end.x - start.x) / 2, end.x, start.x + (end.x - start.x) / 2};
+        int yPoints[] = {start.y + (end.y - start.y) / 2, start.y, start.y + (end.y - start.y) / 2, end.y};
+        g.drawPolygon(xPoints, yPoints, 4);
     }
 }
